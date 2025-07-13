@@ -35,7 +35,31 @@ public class Qes1 {
 		System.out.println(byteNum * shortNum * intNum * longNum);//10000000000	小数点以外の数字を全てかけて出力する	
 		System.out.println(doubleNum / shortNum);//10.5割る100をして出力する
 		System.out.println(byteNum - shortNum);//10引く100をして出力する
-
+		
+		//Qes4
+		String name;
+		name = "山田太郎";
+		System.out.println("こんにちは" + name + "さん！");//コンソールに こんにちは、山田太郎さん！ と表示する
+		
+		//Qes5
+		int age;
+		age = 25;
+		System.out.println("年齢：" + age + "歳");//コンソールに  年齢: 25歳 と表示する
+		
+		//Qes6
+		int num1;
+		num1 = 10;
+		int num2;
+		num2 = 5;			
+		int sum = num1 + num2;
+		System.out.println(sum);//num1 と num2 を足した結果を sum という変数に代入し、コンソールに表示する
+		
+		//Qes7
+		int score = 80;
+		score = score + 20;
+		System.out.println("最終スコア：" + score);//最終スコア: 100 　をscoreを使用してコンソールに表示する。
+		
+		
 		
 
 	}
