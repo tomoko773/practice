@@ -15,6 +15,16 @@ public class Qes1 {
 		String letters;
 		boolean isBoolean;
 		
+		byteNum = 0; 
+		shortNum = 0;
+		intNum = 0;
+		longNum = 0;
+		floatNum = 0;
+		doubleNum = 0;
+		letter = 0;
+		letters = null;
+		isBoolean = false;
+		
 		//Qes2
 		//1で宣言した各型の変数に指定された値を代入する
 		byteNum = 10;
