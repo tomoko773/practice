@@ -18,10 +18,10 @@ public class Qes1 {
 		byteNum = 0; 
 		shortNum = 0;
 		intNum = 0;
-		longNum = 0;
-		floatNum = 0;
-		doubleNum = 0;
-		letter = 0;
+		longNum = 0L;
+		floatNum = 0.0f;
+		doubleNum = 0.0f;
+		letter = '\u0000';
 		letters = null;
 		isBoolean = false;
 		
@@ -69,6 +69,37 @@ public class Qes1 {
 		score = score + 20;
 		System.out.println("最終スコア：" + score);//最終スコア: 100 　をscoreを使用してコンソールに表示する。
 		
+		//Qes8
+		double price = 99.99;
+		int intPrice = (int)price; // double → int (小数点以下が切り捨て)
+		System.out.println("整数価格" + intPrice);//整数価格: 99 とコンソールに表示する
+				
+		//Qes9
+		String numStr = "123";
+		int intNumStr = Integer.parseInt(numStr);
+		intNumStr = intNumStr + 10;
+		System.out.println("変換後の値:" + intNumStr);//変換後の値: の後ろにnumStr + 10 した結果をコンソールに表示
+		
+		//Qes10 
+		int num = 50;
+		String strNum = String.valueOf(num);
+		System.out.println("得点:" + strNum + "点");//num を String 型に変換し、"得点: 50点" の形で表示
+		
+		//Qes11
+		int a = 10;
+		int b = 20;
+		boolean result = (a<b); 
+		System.out.println(result);
+		
+		//Qes12
+		int x = 15;
+		String answer = x > 10 ? "OK" : "NG";
+		System.out.println(answer);
+		
+		//Qes13
+		String text = "私はJavaが好きです。Javaは楽しい！";
+		text.replace("Java", "Python");
+		System.out.println(text.replace("Java", "Pyshon")); 
 		
 		
 
