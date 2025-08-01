@@ -81,12 +81,74 @@ public class Qes2 {
 		//Qes8
 		Scanner scanner = new Scanner(System.in);
 		String str =scanner.nextLine();
-		if (str.equals("") || str.equals(null)) {
+		if (str.equals("") || str == null) {
 			System.out.println("入力が無効です");
 		} else {
 			System.out.println(str);	
 		}
+		
 		//入力が null または空文字（""）のときに「入力が無効です」と表示する処理を作成する
+		
+		//Qes9
+		Scanner scanner1 = new Scanner(System.in);
+		int day = scanner1.nextInt();//day の値に応じて曜日を表示する（1～7 の数値を代入）
+		switch (day) {
+		case 1:
+			System.out.println("月曜日");
+			break;
+		case 2:
+			System.out.println("火曜日");
+			break;
+		case 3:
+			System.out.println("水曜日");
+			break;
+		case 4:
+			System.out.println("木曜日");
+			break;
+		case 5:
+			System.out.println("金曜日");
+			break;
+		case 6:
+			System.out.println("土曜日");
+			break;
+		case 7:
+			System.out.println("日曜日");
+			break;
+		default:
+			System.out.println("無効な入力です");
+	    }
+		
+		//Qes10
+		Scanner scanner2 = new Scanner(System.in);
+		int month =  scanner1.nextInt();//month の値に応じて季節を表示する(1～12 の数値を代入）
+
+		switch (month) {
+		case 12:
+		case 1:
+		case 2:
+			System.out.println("冬");
+			break;
+		case 3:
+		case 4:
+		case 5:
+			System.out.println("春");
+			break;
+		case 6:
+		case 7:
+		case 8:
+			System.out.println("夏");
+			break;
+		case 9:
+		case 10:
+		case 11:
+			System.out.println("秋");
+			break;
+		default:
+			System.out.println("無効な月です");
+		}
+		
+		
+		
 
 	}
 
