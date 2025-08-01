@@ -90,8 +90,7 @@ public class Qes2 {
 		//入力が null または空文字（""）のときに「入力が無効です」と表示する処理を作成する
 		
 		//Qes9
-		Scanner scanner1 = new Scanner(System.in);
-		int day = scanner1.nextInt();//day の値に応じて曜日を表示する（1～7 の数値を代入）
+		int day = scanner.nextInt();//day の値に応じて曜日を表示する（1～7 の数値を代入）
 		switch (day) {
 		case 1:
 			System.out.println("月曜日");
@@ -119,8 +118,7 @@ public class Qes2 {
 	    }
 		
 		//Qes10
-		Scanner scanner2 = new Scanner(System.in);
-		int month =  scanner1.nextInt();//month の値に応じて季節を表示する(1～12 の数値を代入）
+		int month =  scanner.nextInt();//month の値に応じて季節を表示する(1～12 の数値を代入）
 
 		switch (month) {
 		case 12:
