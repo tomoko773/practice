@@ -147,7 +147,7 @@ public class Qes2 {
 			System.out.println("無効な月です");
 		}
 		
-		
+		scanner.close();// Scanner終わり
 		
 
 	}
