@@ -81,11 +81,12 @@ public class Qes2 {
 		//Qes8
 		Scanner scanner = new Scanner(System.in);
 		String str =scanner.nextLine();
-		if (str.equals("") || str == null) {
+		if (str == null || str.equals("")) {
 			System.out.println("入力が無効です");
 		} else {
 			System.out.println(str);	
 		}
+	
 		
 		//入力が null または空文字（""）のときに「入力が無効です」と表示する処理を作成する
 		
@@ -116,6 +117,7 @@ public class Qes2 {
 		default:
 			System.out.println("無効な入力です");
 	    }
+	
 		
 		//Qes10
 		int month =  scanner.nextInt();//month の値に応じて季節を表示する(1～12 の数値を代入）
