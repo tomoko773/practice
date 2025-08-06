@@ -1,6 +1,8 @@
 package curriculum_B;
 
+import java.util.Random;
 import java.util.Scanner;
+
 
 public class Qes3 {
 
@@ -14,11 +16,10 @@ public class Qes3 {
 		//for 文を使って 1 から 10 までの数字を 1 つずつ表示する
 
 		//Qes2
-		for (int i = 1; i <= 20; i++) {
-			if (i % 2 == 0)
-				;
-			System.out.println(i);
-		}
+		for (int d = 1; d <= 20; d++) {
+			if (d % 2 == 0) {
+			System.out.println(d);
+		}}
 		//for 文を使って 2 から 20 までの 偶数 を 1 つずつ表示する
 
 		//Qes3
@@ -93,19 +94,52 @@ public class Qes3 {
 				break;
 			}
 		}
-		scanner.close();
 		//入力が 0 になるまで 何度でも入力を受け付ける,0が入力されたら「終了しました」と表示する
 
-		//Qes11
+		//Qes11		
 		for (int q = 1; q <= 9; q++) {
 			for (int m = 1; m <= 9; m++) {
-					System.out.println("0" + q + " * " + "0" + m + " = " + q*m + " || ");
+				int ans = q * m;
+				String target = String.format("%02d", ans);
+				if (m == 9) {
+					System.out.print("0" + q + " * " + "0" + m + " = " + target);
+				} else {
+					System.out.print("0" + q + " * " + "0" + m + " = " + target + " || ");
 				}
-				
 			}
-			System.out.println();
+			System.out.println();//改行
 		}
+		//九九表
 
-	
+		//Qes12
+		Scanner scanner1 = new Scanner(System.in);	
+		final int Max = 11;
+		Random rand = new Random();
+        int random = rand.nextInt(12);
+        String text1 = scanner1.nextLine();
+        String[] goods = text1.split("、");//、で区切る    
+        
+		for (String item : goods) {
+        	 String ansr = item + "の残り台数は" + random + "台です";
+		  switch (item) {
+		   case "パソコン":		   
+		   case "冷蔵庫":
+		   case "扇風機":
+		   case "洗濯機":
+		   case "加湿器":
+		    break;
+		   case "テレビ":
+		   case "ディスプレイ":
+			   ansr = "ディスプレイ".equals(item)? item + "の残り台数は" +(Max - random)+ "台です" : ansr;
+		    break;
+		   default:
+		    ansr = "『" + item + "』は指定の商品ではありません ";
+		  }
+			System.out.println(ansr);
+			}
 
+		  scanner.close(); //scanner終わり
+		  scanner1.close();
+
+	}//消さない
 }
