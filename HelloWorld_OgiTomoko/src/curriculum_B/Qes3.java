@@ -113,9 +113,9 @@ public class Qes3 {
 
 		//Qes12
 		Scanner scanner1 = new Scanner(System.in);	
-		final int Max = 11;
+		final int Max = 11;//上限１１
 		Random rand = new Random();
-        int random = rand.nextInt(12);
+        int random = rand.nextInt(12);//ランダム１１まで
         String text1 = scanner1.nextLine();
         String[] goods = text1.split("、");//、で区切る    
         
