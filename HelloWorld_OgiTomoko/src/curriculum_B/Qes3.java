@@ -112,14 +112,13 @@ public class Qes3 {
 		//九九表
 
 		//Qes12
-		Scanner scanner1 = new Scanner(System.in);
 		final int Max = 11;//上限１１
 		Random rand = new Random();
-		int random = rand.nextInt(12);//ランダム１１まで
-		String text1 = scanner1.nextLine();
+		String text1 = scanner.next();
 		String[] goods = text1.split("、");//、で区切る    
 
 		for (String item : goods) {
+			int random = rand.nextInt(12);//ランダム１１まで
 			String ansr = item + "の残り台数は" + random + "台です";
 			switch (item) {
 			case "パソコン":
@@ -127,19 +126,20 @@ public class Qes3 {
 			case "扇風機":
 			case "洗濯機":
 			case "加湿器":
+				System.out.println(ansr);
 				break;
 			case "テレビ":
 			case "ディスプレイ":
 				ansr = "ディスプレイ".equals(item) ? item + "の残り台数は" + (Max - random) + "台です" : ansr;
+				System.out.println(ansr);
 				break;
 			default:
 				ansr = "『" + item + "』は指定の商品ではありません ";
+				System.out.println(ansr);
 			}
-			System.out.println(ansr);
 		}
 
 		scanner.close(); //scanner終わり
-		scanner1.close();
 
 	}//消さない
 }
