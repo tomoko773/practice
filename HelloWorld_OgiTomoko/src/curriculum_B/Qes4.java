@@ -39,10 +39,11 @@ public class Qes4 {
 
 			if (max < e[i]) {
 				max = e[i]; //e[i]がMaxより大きければ、e[i]がMax   
+			}
 
 			if (min > e[i]) {
 				min = e[i]; //e[i]がMinより小さければ、e[i]がMin   
-			}
+
 			}
 		}
 
@@ -77,13 +78,13 @@ public class Qes4 {
 				{ 3, 4 },
 				{ 5, 6 }
 		};
-		
+
 		for (int i = 0; i < array.length; i++) { // 行をループ
 			for (int j = 0; j < array[i].length; j++) { // 列をループ
-			System.out.print(array[i][j] + " ");
+				System.out.print(array[i][j] + " ");
 			}
 			System.out.println(); // 改行
-			}
+		}
 		//配列の すべての要素を表示 
 
 		//Qes8
@@ -128,6 +129,7 @@ public class Qes4 {
 
 			}
 		}
+
 		System.out.println("最大値は " + max1);
 		System.out.println("最小値は " + min1);
 
@@ -137,13 +139,13 @@ public class Qes4 {
 		int[][][] array3 = { { { 1, 2 }, { 3, 4 } }, { { 5, 6 }, { 7, 8 } } };
 		for (int i = 0; i < array3.length; i++) { // 行をループ
 			for (int j = 0; j < array3[i].length; j++) { // 列をループ
-				for (int k = 0; k < array3[i].length; k++) { // 三次元をループ
+				for (int k = 0; k < array3[i][j].length; k++) { // 三次元をループ
 					System.out.print(array3[i][j][k] + " ");
 				}
 				System.out.println(); // 改行
 			}
-
 		}
+
 		//配列内のすべての要素を 表示する
 
 	}//消さない
