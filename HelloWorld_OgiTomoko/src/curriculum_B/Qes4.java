@@ -137,15 +137,14 @@ public class Qes4 {
 		int[][][] array3 = { { { 1, 2 }, { 3, 4 } }, { { 5, 6 }, { 7, 8 } } };
 		for (int i = 0; i < array3.length; i++) { // 行をループ
 			for (int j = 0; j < array3[i].length; j++) { // 列をループ
-				for (int k = 0; k < array3[i].length; k++) { // 列をループ
+				for (int k = 0; k < array3[i].length; k++) { // 三次元をループ
 					System.out.print(array3[i][j][k] + " ");
-					}
+				}
 				System.out.println(); // 改行
+			}
 
-			}
-		
-			}
-		//配列内のすべての要素を 表示
+		}
+		//配列内のすべての要素を 表示する
 
 	}//消さない
 
